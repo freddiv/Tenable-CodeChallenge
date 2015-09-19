@@ -31,16 +31,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Code Challenge - Tenable</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
+          <form class="navbar-form ">
             <div class="form-group">
               <input type="text" id="maxDiffVals" placeholder="enter values" class="form-control">
             </div>
@@ -49,6 +40,15 @@
             </div>-->
             <button type="submit" id="maxDiff" class="btn btn-success">Run Max Difference</button>
           </form>
+        </div>
+        <div id="navbar" class="navbar-header navbar-right">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Code Challenge - Tenable</a>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
@@ -59,17 +59,18 @@
       <div class="row">
         <div class="col-md-4">
          <div class="competitor" id="maxDiffOut">
-           <h2>Max Difference Output</h2>
+           <h2>Max Difference</h2>
             <p>
-           
+           Enter a list (comma or space delimited) in the field above and click the "Run Max Difference" button.
+           Function output will be loaded in this space.
            </p>
            <ul>
            </ul>
          </div>
         </div>      
         <div class="col-md-4">
-          <div class="competitor" id="Hoist">
-           <h2>Heading</h2>
+          <div class="competitor" id="hoist">
+           <h2>Hoisting</h2>
             <p>
           
            </p>
@@ -78,8 +79,8 @@
          </div>
        </div>
         <div class="col-md-4">
-         <div class="competitor">
-           <h2>Heading</h2>
+         <div class="competitor" id="object">
+           <h2>Objects</h2>
             <p>
           
            </p>

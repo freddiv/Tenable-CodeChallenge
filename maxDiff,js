@@ -1,0 +1,28 @@
+/*
+ * Complete the function below.
+ * this function works in every case were an array of integers is passed in to it on my local server (not using node and using form input)
+ * I have no access to the test cases that are failing or even the error or output so I cannot debug effectively
+ * see code at https://github.com/freddiv/Tenable-CodeChallenge for a custom implementation 
+ * custom implementation works whether it is numeric or string values
+ * it also handles errors such as an alpha value being passed in the array 
+ * and the first value in the input string not correctly indicating the array length
+ * input can be space or comma delimited
+ */
+function maxDifference(a) {
+      var arr = a,
+	 	 returnVal = -1,
+	 	 newArr = arr.slice(0),
+	 	 maxNumber = Math.max.apply(null, newArr),
+	 	 finalArrLen = newArr.indexOf(maxNumber),
+	 	 finalArray = newArr.slice(0,finalArrLen),
+	 	 minNumber = parseInt(Math.min.apply(null, finalArray)),
+	 	 numDiff = (maxNumber - minNumber);
+	 if(!isNaN(numDiff)) {
+		 returnVal = numDiff;
+	 }
+    
+	  return returnVal;
+	}
+
+
+
